@@ -1,0 +1,44 @@
+#builder{
+	overflow:auto;
+}
+#form-builder{
+	border:5px solid lightgrey;
+	width:500px;
+	height:500px;
+	float:left;
+}
+
+#pallette{
+	border:5px solid grey;
+	width:200px;
+	height:500px;
+	float:left;
+}
+
+.draggable{
+	margin:5px;
+	border:1px solid lightgrey;
+	padding:5px;
+	overflow:auto;
+}
+
+.draggable span.handle{ 
+	margin-left:5px;
+	margin-top:3px;
+	float:right;
+}
+
+.form-element{
+	float:left;
+	width:150px;
+}
+
+
+#generator{
+	margin-top:5px;
+	width:700px;
+}
+
+#generator input{
+	margin-left:40%;
+}
