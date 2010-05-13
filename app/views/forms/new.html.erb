@@ -2,7 +2,7 @@
 <div id="builder">
   
   <div id="form-builder" class="ui-corner-all">
-    <% form_for Form.new do |form| %>
+    <% form_for @form, :html => {:id => 'form'} do |form| %>
     <% end %>
   </div>
 

@@ -19,7 +19,7 @@ Formooee.NewForm = function(){
 	function addToFormBuilder(formElement){
 		var element = clean(formElement);
 		$(element).width($(formElement).width());
-		$(element).appendTo('#form-builder');
+		$(element).appendTo('#form');
 	}
 	
 	function addBackToPallette(formElement){
@@ -35,15 +35,22 @@ Formooee.NewForm = function(){
 		return $(formElement).removeAttr("style");		
 	}
 	
+	function makeFormSubmitForm(){
+		$('#generate').click(function() {
+		  $('#form').submit();
+		});
+	}
+	
 	return{
 			//public methods
 			initialize:function(){
 				makeFormBuilderDroppable();
 				makeFormElementsDraggable();
+				makeFormSubmitForm();
 			},
 			
 			prettifyGenerator:function(){
-				$('#generate').button();
+				$('#generate').button();			
 			}		
 		}
 }();
