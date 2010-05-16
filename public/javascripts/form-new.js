@@ -20,6 +20,8 @@ Formooee.NewForm = function(){
 		var element = clean(formElement);
 		$(element).width($(formElement).width());
 		$(element).appendTo('#form');
+		var elementType = formElement.children('input').first().attr('type');
+		$(document).trigger('dropped:'+elementType, formElement );
 	}
 	
 	function addBackToPallette(formElement){

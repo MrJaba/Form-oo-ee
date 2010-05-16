@@ -3,12 +3,17 @@
 <head>
   <title>Formooee</title>
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag ['jquery', 'jqueryui', 'rails'] %>
+  <%= javascript_include_tag ['jquery', 'jqueryui', 'rails', 'qtip'] %>
   <%= yield(:head) %>
 </head>
 <body>
 
-<%= yield %>
+<div id="header">
+  <h1><span class="dark-green">Form-</span><span class="light-green">Oo-Eee<span></h1>
+</div>
+<div id="content" class="ui-corner-all">
+  <%= yield %>
+</div>
 
 </body>
 </html>

@@ -1,17 +1,45 @@
+body{
+	background:#B8FFA1;
+}
+
+#header h1{
+	font-family:Trebuchet MS,Helvetica,Arial,sans-serif;
+	font-size:1.5em;
+	position:absolute;
+	left:850px;
+	top:70px;
+}
+
+.dark-green{
+	color:#3DA61B
+}
+
+.light-green{
+	color:#76BF5F;
+}
+
+#content{
+	width:620px;
+	margin-left:25%;
+	margin-top:8%;
+	background:white;
+	padding:10px;
+}
+
 #builder{
 	overflow:auto;
 }
 #form-builder{
 	border:5px solid lightgrey;
-	width:500px;
-	height:500px;
+	width:400px;
+	height:400px;
 	float:left;
 }
 
 #pallette{
 	border:5px solid grey;
 	width:200px;
-	height:500px;
+	height:400px;
 	float:left;
 }
 
@@ -40,5 +68,9 @@
 }
 
 #generator input{
-	margin-left:40%;
+	margin-left:30%;
+}
+
+.hidden{
+	display:none;
 }

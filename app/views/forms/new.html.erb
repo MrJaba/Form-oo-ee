@@ -3,6 +3,7 @@
   
   <div id="form-builder" class="ui-corner-all">
     <% form_for @form, :html => {:id => 'form'} do |form| %>
+      <% set_form_accessor(form) %>
     <% end %>
   </div>
 

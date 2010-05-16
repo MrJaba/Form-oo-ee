@@ -9,4 +9,9 @@ class TextField < FormElement
     "text_field_tag( '#{parameters[:name] || 'name'}' )"
   end
   
+  #text-field (model based)
+  #text-field-tag
+  #default value
+  #size, class
+  
 end
